@@ -55,11 +55,23 @@ angular.module('app.main')
                         return oaspSecurityService.logIn(ctrl.credentials.username, ctrl.credentials.password);
                     }).then(function () {
                         signInSuccessCallback();
+                        alert("connectée");
                     }, function () {
                         addErrorMessageAndClearForm('Authentication failed. Please try again!');
                     });
                 }
             };
-        };
-    });
 
+			};
+
+
+
+
+
+
+
+
+
+
+
+    });

@@ -1,5 +1,4 @@
-angular.module('app.main')
-    .controller('SignInCntl', function ($scope, $location, appContext, signIn) {
+angular.module('app.main').controller('SignInCntl', function ($scope, $location, appContext, signIn) {
         'use strict';
 
         function signInSuccessCallback() {
@@ -7,8 +6,12 @@ angular.module('app.main')
                 $location.url(currentUser.getHomeDialogPath());
             });
         }
+
+
         this.getLoginForm = function() {
             return $scope.loginForm;
         };
         signIn(this, signInSuccessCallback);
+
+
     });

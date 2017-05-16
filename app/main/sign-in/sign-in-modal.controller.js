@@ -5,8 +5,12 @@ angular.module('app.main')
         function signInSuccessCallback() {
             $scope.$close();
         }
+
+  
+
         this.getLoginForm = function() {
             return $scope.loginForm;
         };
         signIn(this, signInSuccessCallback);
+
     });

@@ -43,7 +43,7 @@ angular.module('app.main')
                         currentUserInternal.profile.homeDialogPath = '/table-mgmt/table-search';
                     } else if (userProfile.role === 'COOK') {
                         currentUserInternal.profile.homeDialogPath = '/sales-mgmt/cook-positions';
-                    } else {
+                    }  else {
                         // TODO: add rest (+ default?) roles and dialogs
                         currentUserInternal.profile.homeDialogPath = '/table-mgmt/table-search';
                     }
