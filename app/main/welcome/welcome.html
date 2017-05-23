@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html>
+<body data-ng-controller="welcome">
+<div class="row">
+    <div id="accueil_contain" class="col-md-12">
+      <div class="col-md-4">
+        <img id="accueil_icon" src="main/img/accueil.png"/>
+      </div>
+      <div id="accueil_titre" class="col-md-8">
+        <h1>Bienvenue dans notre application d'analyse de l'apné du sommeil !</h1>
+      </div>
+      <div id="accueil_description" class="col-md-12">
+        <p>L'apnée du sommeil se manifeste par des arrêts involontaires de la respiration, les « apnées », se produisant durant le sommeil. L’apnée du sommeil survient en général chez les personnes en surpoids, âgées ou qui ronflent de façon importante.</p>
+        <p>Ces pauses respiratoires durent par définition plus de 10 secondes (et peuvent atteindre plus de 30 secondes). Elles se produisent plusieurs fois par nuit, à une fréquence variable. Les médecins considèrent qu’elles sont problématiques lorsqu’il y en a plus de 5 par heure. Dans les cas graves, elles surviennent jusqu’à plus de 30 fois par heure.</p>
+        <p>Ces apnées perturbent le sommeil et se traduisent principalement par une fatigue au réveil, des maux de tête ou une somnolence pendant la journée.</p>
+      </div>
+    </div>
+
+    <div id="accueil_form" class="col-md-12">
+      <div  class="col-md-12">
+        <h3>Connectez-vous !</h3>
+      </div>
+
+      <!-- <div  class="col-md-6">
+        <h3>Inscrivez-vous !</h3>
+      </div> -->
+
+      <div id="accueil_connexion" class="col-md-12">
+        <form name="myForm">
+          <div class="form-group">
+            <label for="connexion_id">Votre identifiant </label>
+            <input id="connexion_id" type="text" class="form-control" name="login" ng-model="user.login" placeholder="Identifiant" ng-init="user.login = username"
+                required>
+            <!-- <input id="instruc1" type="text" class="lower" name="login" ng-model="user.login" placeholder="Login" ng-init="user.login = username"
+                required> -->
+          </div>
+          <div class="form-group">
+            <label for="connexion_password">Votre mot de passe</label>
+            <input id="connexion_password" type="password" name="password" ng-model="user.password" class="form-control" placeholder="Mot de passe" ng-init="user.password = password"  required>
+            <!-- <input id="instruc1" type="password" name="password" ng-model="user.password" placeholder="Password" ng-init="user.password = password"  required> -->
+          </div>
+          <div class="checkbox">
+            <label>
+              <input type="checkbox"> Se souvenir de moi !
+            </label>
+          </div>
+          <button ng-click="connexion(user)" class="btn btn-default accueil_bouton_connexion" ng-disabled="myForm.$invalid">Connexion</button>
+      </form>
+
+      <div id="connexion_form_error">
+        <p ng-show="myForm.login.$error.required">* Login obligatoire</p>
+        <p ng-show="myForm.password.$error.required">* Mot de passe obligatoire</p>
+      </div>
+      </div>
+
+      <!-- <div id="accueil_inscription" class="col-md-6">
+        <form>
+          <div class="form-group">
+            <label for="inscription_id">Choisissez un identifiant</label>
+            <input type="text" class="form-control" id="inscription_id" placeholder="Identifiant">
+          </div>
+          <div class="form-group">
+            <label for="inscription_password">Choisissez votre mot de passe</label>
+            <input type="password" class="form-control" id="inscription_password" placeholder="Mot de passe">
+          </div>
+          <br>
+          <button ng-click="inscription()" class="btn btn-default accueil_bouton_inscription">S'inscrire</button>
+      </form>
+      </div>
+    </div> -->
+
+</div>
+</body>
+</html>
