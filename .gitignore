@@ -11,3 +11,5 @@ java/target
 .sonar
 *.bak
 docs/
+gulp
+*.json
