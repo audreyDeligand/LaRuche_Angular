@@ -9,3 +9,5 @@ java/target
 .settings
 .project
 .sonar
+*.json
+LaRuche_Angular

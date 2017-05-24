@@ -9,7 +9,7 @@ var requete = {
   headers:{
     'Accept': 'application/json',
     'Content-Type': 'application/json',
-    'X-CSRF-TOKEN': '07933522-5b51-476b-8452-34e83c5b59cc',
+    'X-CSRF-TOKEN': 'b7da8cbd-774e-4c7f-b7ad-6b6cd9fcf143',
     'Cookie' : 'test',
   }
 }
